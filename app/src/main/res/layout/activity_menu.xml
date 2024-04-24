@@ -1,0 +1,347 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_activity"
+    android:background="@drawable/bg2">
+
+    <!-- CardView with Selamat datang -->
+    <!-- CardView with buttons -->
+
+    <!-- ScrollView for the rest of the content -->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="420dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/hijau1"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:fontFamily="@font/font1"
+                android:paddingLeft="18dp"
+                android:paddingTop="20dp"
+                android:text="Selamat datang di RamadhanEase!"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="55dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="0dp"
+                android:text="Aplikasi kami dilengkapi dengan fitur-fitur yang dirancang untuk memudahkan perjalanan spiritual Anda.Selamat menunaikan ibadah!"
+                android:textColor="@color/white"
+                android:textSize="12.5dp" />
+
+            <TextView
+                android:id="@+id/clock"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="105dp"
+                android:fontFamily="@font/fonta"
+                android:paddingLeft="20dp"
+                android:text="00.00"
+                android:textColor="@color/putih2"
+                android:textSize="29dp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:fontFamily="@font/fonta"
+                android:paddingLeft="20dp"
+                android:text=""
+                android:textColor="@color/putih2"
+                android:textSize="18dp" />
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="@color/hijau1"
+            app:cardCornerRadius="20dp">
+
+            <ImageButton
+                android:id="@+id/button1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_button"
+                android:onClick="button1"
+                android:src="@drawable/tas1" />
+
+            <ImageButton
+                android:id="@+id/button2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_button"
+                android:scaleType="fitStart"
+                android:src="@drawable/doa" />
+
+            <ImageButton
+                android:id="@+id/button3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_button"
+                android:scaleType="fitStart"
+                android:src="@drawable/kom3" />
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Jadwal Sholat"
+                android:textSize="24dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/font1"
+                android:textColor="@color/black"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/putih3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SHUBUH"
+                    android:textSize="26dp"
+                    android:fontFamily="@font/fonta"
+                    android:textColor="@color/biru1"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00.00 AM"
+                    android:layout_marginLeft="160dp"
+                    android:textColor="@color/abu1"
+                    android:fontFamily="@font/fonta"
+                    android:textSize="25dp"
+                    android:layout_marginTop="15dp"/>
+
+                <ImageView
+                    android:id="@+id/alarm1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jam2"
+                    android:layout_marginLeft="270dp"
+                    android:onClick="alarm1"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/putih3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DZUHUR"
+                    android:textSize="26dp"
+                    android:fontFamily="@font/fonta"
+                    android:textColor="@color/biru1"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00.00 AM"
+                    android:layout_marginLeft="160dp"
+                    android:textColor="@color/abu1"
+                    android:fontFamily="@font/fonta"
+                    android:textSize="25dp"
+                    android:layout_marginTop="15dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jam2"
+                    android:layout_marginLeft="270dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="280dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/putih3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASHAR"
+                    android:textSize="26dp"
+                    android:fontFamily="@font/fonta"
+                    android:textColor="@color/biru1"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00.00 AM"
+                    android:layout_marginLeft="160dp"
+                    android:textColor="@color/abu1"
+                    android:fontFamily="@font/fonta"
+                    android:textSize="25dp"
+                    android:layout_marginTop="15dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jam2"
+                    android:layout_marginLeft="270dp"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="380dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/putih3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAGHRIB"
+                    android:textSize="26dp"
+                    android:fontFamily="@font/fonta"
+                    android:textColor="@color/biru1"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00.00 AM"
+                    android:layout_marginLeft="160dp"
+                    android:textColor="@color/abu1"
+                    android:fontFamily="@font/fonta"
+                    android:textSize="25dp"
+                    android:layout_marginTop="15dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jam2"
+                    android:layout_marginLeft="270dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="480dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/putih3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ISYA"
+                    android:textSize="26dp"
+                    android:fontFamily="@font/fonta"
+                    android:textColor="@color/biru1"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00.00 AM"
+                    android:layout_marginLeft="160dp"
+                    android:textColor="@color/abu1"
+                    android:fontFamily="@font/fonta"
+                    android:textSize="25dp"
+                    android:layout_marginTop="15dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jam2"
+                    android:layout_marginLeft="270dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/hijau1"
+                android:src="@drawable/refresh"
+                android:layout_marginTop="580dp"
+                android:layout_marginBottom="40dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

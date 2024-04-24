@@ -3,4 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="hijau1">#368946</color>
+    <color name="putih2">#D2E8CF</color>
+    <color name="putih3">#ECEAEA</color>
+    <color name="biru1">#274569</color>
+    <color name="abu1">#534F4F</color>
+    <color name="red">#E72929</color>
 </resources>
